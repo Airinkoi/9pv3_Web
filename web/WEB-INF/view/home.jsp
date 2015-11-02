@@ -7,7 +7,11 @@
 
     <h1>Home Page</h1>
 
-    <h4> ${message} </h4>
+    <h6>Page: ${page}</h6>
+
+    <% for (int i = 0; i < 3; i++) { %>
+        <h4> ${message} <%= i %></h4>
+    <% } %>
 
 </body>
 </html>

@@ -14,6 +14,9 @@ public class HomeController extends HttpServlet {
         String message = "Hello World";
         req.setAttribute("message", message);
 
+        String page = req.getParameter("page");
+        req.setAttribute("page", page);
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/view/home.jsp");
         dispatcher.forward(req, resp);
     }
