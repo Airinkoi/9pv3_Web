@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Âàäèì
+  User: Ð’Ð°Ð´Ð¸Ð¼
   Date: 02.11.2015
   Time: 10:51
   To change this template use File | Settings | File Templates.
@@ -11,6 +11,6 @@
     <title></title>
   </head>
   <body>
-
+    hi from jsp
   </body>
 </html>

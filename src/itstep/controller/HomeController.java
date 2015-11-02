@@ -1,5 +1,6 @@
 package itstep.controller;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,7 +11,10 @@ import java.io.PrintWriter;
 public class HomeController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        PrintWriter out = resp.getWriter();
-        out.print("Hi");
+        String message = "Hello World";
+        req.setAttribute("message", message);
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/view/home.jsp");
+        dispatcher.forward(req, resp);
     }
 }
