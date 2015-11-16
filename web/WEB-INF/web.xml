@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>HomeController</servlet-name>
-        <servlet-class>itstep.controller.HomeController</servlet-class>
+        <servlet-class>org.itstep.controller.HomeController</servlet-class>
     </servlet>
 
     <servlet-mapping>
